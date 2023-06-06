@@ -12,7 +12,7 @@
         "target": "node",
         "compiler": "tsc",
         "outputPath": "dist/apps/test-nx",
-        "main": "apps/test-nx/src/main.ts",
+        "main": "apps/test-nx/src/main.js",
         "tsConfig": "apps/test-nx/tsconfig.app.json",
         "assets": ["apps/test-nx/src/assets"],
         "isolatedConfig": true,
