@@ -12,12 +12,12 @@ const users = [
   { id: "10", firstName: 'Jeke', lastName: 'Yeke', email : 'test10@example.com' , companyName : 'TOSHIBA' }
 ]
 //add JWT token middleware
-const dotenv = require('dotenv');
-const jwt = require('jsonwebtoken');
-dotenv.config();
+// const dotenv = require('dotenv');
+// const jwt = require('jsonwebtoken');
+// dotenv.config();
 
 function generateAccessToken() {
-  return jwt.sign("test_token", process.env.TOKEN_SECRET);
+  return "Test TOken" ;//jwt.sign("test_token", process.env.TOKEN_SECRET);
 }
 
 

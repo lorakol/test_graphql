@@ -9,7 +9,9 @@ const schema = makeExecutableSchema({
   resolvers,
 });
 const app = express();
+const authMiddleware = require('./authMiddleware');
 
+app.use('/protected', authMiddleware);
 
 app.use('/graphql', graphqlHTTP({
   schema: schema,
